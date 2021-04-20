@@ -2,32 +2,26 @@
 /**
  * Write a description of class Main here.
  *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Main
-{
-    // instance variables - replace the example below with your own
-    private int x;
+ * @author (Ilmiza Fittah)
+ * @version (0.1-20.04)
+ */public class Main{
+    
+    public static void main(String args[]){
+        // menciptakan objek baru dari class Calculator
+        Calculator kalkul = new Calculator();
+        
+        kalkul.name = "Operator ";
 
-    /**
-     * Constructor for objects of class Main
-     */
-    public Main()
-    {
-        // initialise instance variables
-        x = 0;
+        //author
+        System.out.println("--- OPERATOR DASAR PADA JAVA ---");
+        //inputan oprator yg dijalankan
+        System.out.println("nilai 1 = "+ kalkul.a);
+        System.out.println("nilai 1 = "+ kalkul.b);
+        //memanggil atribut hasil
+        System.out.println(kalkul.name + "penjumlahan 4 + 5 = "+ kalkul.penjumlahan);
+        System.out.println(kalkul.name + "pengurangan 4 - 5 = "+ kalkul.pengurangan);
+        System.out.println(kalkul.name + "perkalian 4 * 5 = "+ kalkul.perkalian);
+        System.out.println(kalkul.name + "pembagian 4 / 5 = "+ kalkul.pembagian);        
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
 }
