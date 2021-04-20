@@ -2,8 +2,8 @@
 /**
  * Write a description of class kalkulator here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Ilmiza Fitrah)
+ * @version (0.1-20.04)
  */
 public class kalkulator{
 
