@@ -5,7 +5,7 @@
  * @author Ilmiza
  * @version 21.04
  */
-public class KalkulatorProgramer
+public class KalkulatorProgramer extends Kalkulator
 {
     // instance variables - replace the example below with your own
     private int x;
