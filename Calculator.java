@@ -1,53 +1,54 @@
 /**
- * class Kalkulator
+ * Write a description of class Calculator here.
  *
  * @author Ilmiza
  * @version 0.1
  */
-public class Kalkulator{
-    // op1
+public class Calculator
+{
+     // op1
     public double op1=0;
     public double op2=0;
-    public static final String info = "Kalkulatorku Mantappu Djiwa";
+    public static final String info = "Kalkulatorku";
     public static int jumlahobject = 0;
 
     /**
-     * Constructor for objects of class Kalkulator
+     * Constructor for objects of class Calculator
      */
-    public Kalkulator()
+    public Calculator()
     {
         // initialise instance variables
         this.jumlahobject += 1;
     }
-    
+
     /**
-     * Constructor for objects of class Kalkulator
+     * Constructor for objects of class Calculator
      * @param  double, double inisialisasi nilai dari op1 dan op2
     */
-  
-    public Kalkulator(double op1, double op2)
+
+    public Calculator(double op1, double op2)
     {
         this.op1 = op1;
         this.op2 = op2;
         this.jumlahobject += 1;
-    
+
     }
-    
+
     /**
-     * Constructor for objects of class Kalkulator
+     * Constructor for objects of class Calculator
      * @param  double, double inisialisasi nilai dari op1 dan op2
     */
-  
-    public Kalkulator(double op2)
+
+    public Calculator(double op2)
     {
         this.op2 = op2;
         this.jumlahobject += 1;
-    
+
     }
-    
-    
-    
-    
+
+
+
+
     /**
      * set op1
      *
@@ -58,7 +59,8 @@ public class Kalkulator{
     {
         this.op1 = op1;
     }
-    
+
+
     /**
      * get op1
      *
@@ -69,7 +71,8 @@ public class Kalkulator{
     {
         return this.op1;
     }
-    
+
+
     /**
      * jumlah tanpa parameter
      *
@@ -80,7 +83,7 @@ public class Kalkulator{
     {
         return this.op1 + this.op2;
     }
-    
+
      /**
      * jumlah dengan parameter
      *
@@ -95,81 +98,59 @@ public class Kalkulator{
         return jumlah();
     }
     
-    /**
-     * kurang tanpa parameter
-     *
-     * @param  
-     * @return  double hasil perkurangan op1 + op2
-     */
-    public double kurang() 
+    public double kurang()
     {
         return this.op1 - this.op2;
     }
-    
      /**
      * kurang dengan parameter
      *
      * @param  double op1
      *         double op2
-     * @return double hasil perkurangan op1 - op2
+     * @return double hasil pengurangan op1 - op2
      */
-    public double kurang(double op1, double op2) 
+
+     public double kurang(double op1, double op2) 
     {
         this.op1 = op1;
         this.op2 = op2;
-        return kurang();
+        return this.op1- this.op2;
     }
-    
-    /**
-     * kali tanpa parameter
-     *
-     * @param  
-     * @return  double hasil Perkalian op1 * op2
-     */
-    public double kali() 
+    public double kali()
     {
         return this.op1 * this.op2;
     }
-    
      /**
      * kali dengan parameter
      *
      * @param  double op1
      *         double op2
-     * @return double hasil Perkalian op1 * op2
+     * @return double hasil perkalian op1 * op2
      */
-    public double kali(double op1, double op2) 
+
+     public double kali(double op1, double op2) 
     {
         this.op1 = op1;
         this.op2 = op2;
-        return kali();
+        return this.op1 * this.op2;
     }
-    
-    /**
-     * bagi tanpa parameter
-     *
-     * @param  
-     * @return  double hasil Pembagian op1 / op2
-     */
-    public double bagi() 
+    public double bagi()
     {
         return this.op1 / this.op2;
     }
-    
      /**
      * bagi dengan parameter
      *
      * @param  double op1
      *         double op2
-     * @return double hasil Pembagian op1 * op2
+     * @return double hasil pembagian op1 \op2
      */
-    public double bagi(double op1, double op2) 
+
+     public double bagi(double op1, double op2) 
     {
         this.op1 = op1;
         this.op2 = op2;
-        return bagi();
+        return this.op1 /this.op2;
     }
-    
-    
-    
+
 }
