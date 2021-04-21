@@ -49,6 +49,15 @@
        double bagi2 = calculator1.bagi(6.2,  4.2  );
        System.out.println("Hasil pembagian method bagi tanpa parameter:  " + bagi1);
        System.out.println("Hasil pembagian method bagi dengan parameter:  "+ bagi2);
+    
+       CalculatorScientific cs = new CalculatorScientific();
+       System.out.println(cs.jumlah(4,5));
+       System.out.println(cs.menghitungFaktorial(4));
+       System.out.println(CalculatorScientific.jumlahobject);
+       
+       CalculatorScientific cs2 = new CalculatorScientific(2,3);
+       System.out.println(cs2.op1);
+       System.out.println(cs2.op2);
     }
     
 }

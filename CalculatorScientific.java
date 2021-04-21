@@ -7,27 +7,61 @@
  */
 public class CalculatorScientific extends Calculator
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    
 
     /**
-     * Constructor for objects of class CalculatorScientific
+     * Constructor for objects of class Calculator
      */
     public CalculatorScientific()
     {
         // initialise instance variables
-        x = 0;
+        super.jumlahobject += 1;
+       
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+     * Constructor for objects of class Calculator
+     * @param  double, double inisialisasi nilai dari op1 dan op2
+    */
+  
+    public CalculatorScientific(double op1, double op2)
     {
-        // put your code here
-        return x + y;
+        super.op1 = op1;
+        super.op2 = op2;
+        super.jumlahobject += 1;
+    
     }
+    
+    /**
+     * Constructor for objects of class Calculator
+     * @param  double, double inisialisasi nilai dari op1 dan op2
+    */
+  
+    public CalculatorScientific(double op2)
+    {
+        
+        super.op2 = op2;
+        super.jumlahobject += 1;
+        
+    
+    }
+    
+    
+    /**
+     * menghitungFaktorial
+     *
+     * @param  int op1
+     *         
+     * @return int 4! = 4x3x2x1 (example)
+     */
+    public int menghitungFaktorial(int op1) 
+    {
+        // contoh
+        int hasil = 5;
+        return hasil;
+    }
+    
+    // method menghitung luas lingkaran
+    // method menghitung luas bujur sangkar
 }
+
